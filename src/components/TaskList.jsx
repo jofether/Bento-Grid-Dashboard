@@ -17,16 +17,12 @@ export function TaskList({ darkMode }) {
 
   return (
     <div className={`${darkMode ? 'bg-neutral-800/50' : 'bg-white'} backdrop-blur-xl rounded-3xl p-6 border ${darkMode ? 'border-neutral-700/50' : 'border-gray-200/50'}`}>
-      <div className="mb-4">
-        <h3 className="font-semibold text-lg mb-2">Tasks</h3>
-        <div className={`h-2 ${darkMode ? 'bg-neutral-700' : 'bg-gray-300'} rounded-full overflow-hidden`}>
-          <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all" style={{ width: `${progress}%` }}></div>
-        </div>
-        <p className={`text-xs mt-1 ${darkMode ? 'text-neutral-400' : 'text-gray-600'}`}>{completedCount}/{tasks.length} completed</p>
-      </div>
+      {/* ... header ... */}
       <div className="space-y-2">
         {tasks.map((task) => (
-          <label key={task.id} className="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg">
+          /* 8. TYPO BUG B: 'flexx' is invalid. The items will use block layout, causing the checkbox, text, and badge to stack vertically. */
+          /* FIX: className="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg" */
+          <label key={task.id} className="flexx items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg">
             <input
               type="checkbox"
               checked={task.completed}
