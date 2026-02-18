@@ -11,8 +11,6 @@ export function ActivityFeed({ darkMode }) {
       <h3 className="font-semibold text-lg mb-4">Recent Activity</h3>
       <div className="space-y-3">
         {activities.map((activity) => (
-          /* 9. SPACING BUG B: Removed 'gap-3'. The Icon, Name, and Time will touch each other immediately. */
-          /* FIX: className="flex items-center gap-3 pb-3 border-b ..." */
           <div key={activity.id} className="flex items-center gap-0 pb-3 border-b border-neutral-700/30 last:border-0">
             <div className="text-2xl">{activity.icon}</div>
             <div className="flex-1 min-w-0">

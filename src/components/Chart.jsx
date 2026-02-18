@@ -6,8 +6,6 @@ export function Chart({ darkMode, title, data = [] }) {
   return (
     <div className={`${darkMode ? 'bg-neutral-800/50' : 'bg-white'} backdrop-blur-xl rounded-3xl p-6 border ${darkMode ? 'border-neutral-700/50' : 'border-gray-200/50'}`}>
       <h3 className="font-semibold text-lg mb-4">{title}</h3>
-      {/* 6. LAYOUT BUG B: Changed 'items-end' to 'flex-col'. Bars will stack vertically and look like a list instead of a chart. */}
-      {/* FIX: className="h-40 flex items-end space-x-2" */}
       <div className="h-40 flex flex-col space-x-2">
         {data.map((value, i) => (
           <div

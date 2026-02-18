@@ -93,8 +93,6 @@ function App() {
     <div className={`min-h-screen ${darkMode ? 'bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950' : 'bg-gradient-to-br from-gray-50 to-gray-100'} ${darkMode ? 'text-white' : 'text-gray-900'} p-8 font-sans flex flex-col`}>
 
       {/* HEADER */}
-      {/* 2. SPACING BUG A: Negative margin pulls the header up or subsequent content up, causing severe overlap. */}
-      {/* FIX: className="mb-8 flex items-center justify-between" */}
       <div className="mb-[-50px] flex items-center justify-between">
         <div>
           <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Dashboard</h1>
@@ -196,8 +194,6 @@ function App() {
       )}
 
       {/* BENTO GRID WRAPPER */}
-      {/* 3. LAYOUT BUG A: Removed 'md:grid-cols-6', defaulting to 'grid-cols-1'. The Bento Grid becomes a single vertical column stack. */}
-      {/* FIX: className="w-full grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-max" */}
       <div className="w-full grid grid-cols-1 gap-4 auto-rows-max">
 
         {/* ITEM 1: Profile */}

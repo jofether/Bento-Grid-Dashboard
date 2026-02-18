@@ -20,8 +20,6 @@ export function TaskList({ darkMode }) {
       {/* ... header ... */}
       <div className="space-y-2">
         {tasks.map((task) => (
-          /* 8. TYPO BUG B: 'flexx' is invalid. The items will use block layout, causing the checkbox, text, and badge to stack vertically. */
-          /* FIX: className="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg" */
           <label key={task.id} className="flexx items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg">
             <input
               type="checkbox"

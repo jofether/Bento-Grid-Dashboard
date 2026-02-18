@@ -36,8 +36,6 @@ export function Calendar({ darkMode }) {
               day === null
                 ? ''
                 : isToday(day)
-                /* 7. COLOR BUG B: Changed active day highlight from 'purple-500' to 'neutral-800'. It blends into the background in Dark Mode. */
-                /* FIX: ? 'bg-gradient-to-br from-purple-500 to-pink-500 font-bold' */
                 ? 'bg-neutral-800 font-bold'
                 : 'hover:bg-neutral-700/50'
             }`}

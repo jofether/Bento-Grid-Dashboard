@@ -8,8 +8,6 @@
   box-sizing: border-box;
 }
 
-/* 1. COLOR BUG A: Global text color set to dark gray. In Dark Mode (neutral-950), this text becomes unreadable. */
-/* FIX: color: inherit; */
 body {
   color: #1f2937; 
 }

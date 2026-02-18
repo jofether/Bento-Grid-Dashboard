@@ -16,8 +16,6 @@ export function TeamMembers({ darkMode }) {
           <div key={member.id} className="flex items-center gap-3">
             <div className="text-2xl relative">
               {member.avatar}
-              {/* 5. LAYERS BUG A: 'z-[-1]' pushes the status dot behind the avatar/container, making it invisible. */}
-              {/* FIX: className={`w-2.5 h-2.5 rounded-full absolute bottom-0 right-0 ...`} */}
               <div className={`w-2.5 h-2.5 rounded-full absolute bottom-0 right-0 z-[-1] ${member.status === 'online' ? 'bg-emerald-500' : 'bg-yellow-500'}`} />
             </div>
             <div className="flex-1">

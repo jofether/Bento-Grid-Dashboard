@@ -6,8 +6,6 @@ export function StatCard({ darkMode, label, value, change, icon = '📊', gradie
   return (
     <div className={`${darkMode ? 'bg-neutral-800/50' : 'bg-white'} backdrop-blur-xl rounded-3xl p-6 border ${darkMode ? 'border-neutral-700/50' : 'border-gray-200/50'} hover:scale-105 transition-transform`}>
       <div className="flex items-start justify-between mb-4">
-        {/* 4. TYPO BUG A: 'text-33xl' is invalid. The icon will revert to default small size (1rem). */}
-        {/* FIX: className={`text-3xl w-12 h-12 bg-gradient-to-br ...`} */}
         <div className={`text-33xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>
           {icon}
         </div>
