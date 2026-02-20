@@ -1,0 +1,155 @@
+{
+  "repository": "Bento Grid Dashboard",
+  "bugs": [
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/App.jsx",
+      "line_number": 96,
+      "clean_code": "<div className=\"mb-8 flex items-center justify-between\">",
+      "buggy_code": "<div className=\"mb-[-50px] flex items-center justify-between\">",
+      "css_selector": ".header-container",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-layout",
+      "file_modified": "src/App.jsx",
+      "line_number": 197,
+      "clean_code": "<div className=\"w-full grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-max\">",
+      "buggy_code": "<div className=\"w-full grid grid-cols-1 gap-4 auto-rows-max\">",
+      "css_selector": ".bento-grid",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "destructuring",
+      "file_modified": "src/components/ActivityFeed.jsx",
+      "line_number": 4,
+      "clean_code": "const [activities, setActivities] = useState([",
+      "buggy_code": "const [activities] = useState([",
+      "css_selector": ".activity-feed",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "gap",
+      "file_modified": "src/components/ActivityFeed.jsx",
+      "line_number": 14,
+      "clean_code": "<div key={activity.id} className=\"flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0\">",
+      "buggy_code": "<div key={activity.id} className=\"flex items-center gap-0 pb-3 border-b border-neutral-700/30 last:border-0\">",
+      "css_selector": ".activity-item",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-gradient",
+      "file_modified": "src/components/Calendar.jsx",
+      "line_number": 39,
+      "clean_code": "? 'bg-gradient-to-br from-purple-500 to-pink-500 font-bold'",
+      "buggy_code": "? 'bg-neutral-800 font-bold'",
+      "css_selector": ".calendar-day-current",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Chart.jsx",
+      "line_number": 9,
+      "clean_code": "<div className=\"h-40 flex items-end space-x-2\">",
+      "buggy_code": "<div className=\"h-40 flex flex-col space-x-2\">",
+      "css_selector": ".chart-bars",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "text-size",
+      "file_modified": "src/components/StatCard.jsx",
+      "line_number": 9,
+      "clean_code": "<div className={`text-3xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
+      "buggy_code": "<div className={`text-33xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
+      "css_selector": ".stat-card-icon",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/StorageWidget.jsx",
+      "line_number": 14,
+      "clean_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30\">",
+      "buggy_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0\">",
+      "css_selector": ".storage-bar-container",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/StorageWidget.jsx",
+      "line_number": 18,
+      "clean_code": "className={item.color}",
+      "buggy_code": "className={`${item.color} relative z-[-1]`}",
+      "css_selector": ".storage-bar-segment",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "flexbox-class",
+      "file_modified": "src/components/TaskList.jsx",
+      "line_number": 24,
+      "clean_code": "<label key={task.id} className=\"flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
+      "buggy_code": "<label key={task.id} className=\"flexx items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
+      "css_selector": ".task-item",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

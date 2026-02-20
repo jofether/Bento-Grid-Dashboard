@@ -1,0 +1,1454 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bento Grid Dashboard</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/Jethers/OneDrive - CPC/Desktop/Thesis/Synthetic Dataset/Bento Grid Dashboard/src/index.css">*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-0 {
+  inset: 0px;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
+.z-10 {
+  z-index: 10;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.-mr-20 {
+  margin-right: -5rem;
+}
+.-mt-20 {
+  margin-top: -5rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.h-1\.5 {
+  height: 0.375rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-14 {
+  height: 3.5rem;
+}
+.h-2 {
+  height: 0.5rem;
+}
+.h-2\.5 {
+  height: 0.625rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-3 {
+  height: 0.75rem;
+}
+.h-32 {
+  height: 8rem;
+}
+.h-4 {
+  height: 1rem;
+}
+.h-40 {
+  height: 10rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.h-72 {
+  height: 18rem;
+}
+.h-8 {
+  height: 2rem;
+}
+.h-full {
+  height: 100%;
+}
+.max-h-40 {
+  max-height: 10rem;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-14 {
+  width: 3.5rem;
+}
+.w-2 {
+  width: 0.5rem;
+}
+.w-2\.5 {
+  width: 0.625rem;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-3\/4 {
+  width: 75%;
+}
+.w-32 {
+  width: 8rem;
+}
+.w-4 {
+  width: 1rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.w-72 {
+  width: 18rem;
+}
+.w-full {
+  width: 100%;
+}
+.min-w-0 {
+  min-width: 0px;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.auto-rows-max {
+  grid-auto-rows: max-content;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.375rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.375rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-8 {
+  border-width: 8px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-blue-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity, 1));
+}
+.border-blue-500\/50 {
+  border-color: rgb(59 130 246 / 0.5);
+}
+.border-emerald-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(167 243 208 / var(--tw-border-opacity, 1));
+}
+.border-emerald-500\/50 {
+  border-color: rgb(16 185 129 / 0.5);
+}
+.border-gray-200\/50 {
+  border-color: rgb(229 231 235 / 0.5);
+}
+.border-gray-300\/50 {
+  border-color: rgb(209 213 219 / 0.5);
+}
+.border-green-500\/30 {
+  border-color: rgb(34 197 94 / 0.3);
+}
+.border-neutral-600\/50 {
+  border-color: rgb(82 82 82 / 0.5);
+}
+.border-neutral-700\/30 {
+  border-color: rgb(64 64 64 / 0.3);
+}
+.border-neutral-700\/50 {
+  border-color: rgb(64 64 64 / 0.5);
+}
+.border-yellow-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 240 138 / var(--tw-border-opacity, 1));
+}
+.border-yellow-500\/50 {
+  border-color: rgb(234 179 8 / 0.5);
+}
+.border-t-green-500 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
+}
+.bg-blue-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-500\/20 {
+  background-color: rgb(59 130 246 / 0.2);
+}
+.bg-emerald-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 253 245 / var(--tw-bg-opacity, 1));
+}
+.bg-emerald-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
+}
+.bg-emerald-500\/20 {
+  background-color: rgb(16 185 129 / 0.2);
+}
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity, 1));
+}
+.bg-green-500\/20 {
+  background-color: rgb(34 197 94 / 0.2);
+}
+.bg-green-500\/30 {
+  background-color: rgb(34 197 94 / 0.3);
+}
+.bg-neutral-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity, 1));
+}
+.bg-neutral-700\/30 {
+  background-color: rgb(64 64 64 / 0.3);
+}
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity, 1));
+}
+.bg-neutral-800\/50 {
+  background-color: rgb(38 38 38 / 0.5);
+}
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+}
+.bg-purple-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+}
+.bg-red-500\/20 {
+  background-color: rgb(239 68 68 / 0.2);
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.bg-white\/20 {
+  background-color: rgb(255 255 255 / 0.2);
+}
+.bg-yellow-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
+}
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+}
+.bg-yellow-500\/20 {
+  background-color: rgb(234 179 8 / 0.2);
+}
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+.from-blue-500 {
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-cyan-500 {
+  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-emerald-500 {
+  --tw-gradient-from: #10b981 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(16 185 129 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-gray-100 {
+  --tw-gradient-from: #f3f4f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(243 244 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-gray-50 {
+  --tw-gradient-from: #f9fafb var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 250 251 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-green-500 {
+  --tw-gradient-from: #22c55e var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-indigo-400 {
+  --tw-gradient-from: #818cf8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(129 140 248 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-indigo-600 {
+  --tw-gradient-from: #4f46e5 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(79 70 229 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-neutral-800\/50 {
+  --tw-gradient-from: rgb(38 38 38 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(38 38 38 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-neutral-950 {
+  --tw-gradient-from: #0a0a0a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(10 10 10 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-orange-400 {
+  --tw-gradient-from: #fb923c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(251 146 60 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-orange-500 {
+  --tw-gradient-from: #f97316 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-pink-500 {
+  --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-purple-500 {
+  --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(168 85 247 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-red-500 {
+  --tw-gradient-from: #ef4444 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(239 68 68 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.via-indigo-600 {
+  --tw-gradient-to: rgb(79 70 229 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #4f46e5 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.via-neutral-750\/50 {
+  --tw-gradient-to: rgb(42 42 42 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(42 42 42 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.via-neutral-900 {
+  --tw-gradient-to: rgb(23 23 23 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #171717 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.via-purple-400 {
+  --tw-gradient-to: rgb(192 132 252 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #c084fc var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.via-purple-500 {
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.via-transparent {
+  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.to-amber-500 {
+  --tw-gradient-to: #f59e0b var(--tw-gradient-to-position);
+}
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+}
+.to-cyan-500 {
+  --tw-gradient-to: #06b6d4 var(--tw-gradient-to-position);
+}
+.to-emerald-500 {
+  --tw-gradient-to: #10b981 var(--tw-gradient-to-position);
+}
+.to-gray-100 {
+  --tw-gradient-to: #f3f4f6 var(--tw-gradient-to-position);
+}
+.to-gray-50 {
+  --tw-gradient-to: #f9fafb var(--tw-gradient-to-position);
+}
+.to-neutral-700\/50 {
+  --tw-gradient-to: rgb(64 64 64 / 0.5) var(--tw-gradient-to-position);
+}
+.to-neutral-950 {
+  --tw-gradient-to: #0a0a0a var(--tw-gradient-to-position);
+}
+.to-orange-600 {
+  --tw-gradient-to: #ea580c var(--tw-gradient-to-position);
+}
+.to-pink-400 {
+  --tw-gradient-to: #f472b6 var(--tw-gradient-to-position);
+}
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+.to-purple-500 {
+  --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
+}
+.to-purple-600 {
+  --tw-gradient-to: #9333ea var(--tw-gradient-to-position);
+}
+.to-rose-500 {
+  --tw-gradient-to: #f43f5e var(--tw-gradient-to-position);
+}
+.to-teal-500 {
+  --tw-gradient-to: #14b8a6 var(--tw-gradient-to-position);
+}
+.to-transparent {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+.to-violet-500 {
+  --tw-gradient-to: #8b5cf6 var(--tw-gradient-to-position);
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+.text-center {
+  text-align: center;
+}
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.leading-tight {
+  line-height: 1.25;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+.text-emerald-300 {
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity, 1));
+}
+.text-emerald-700 {
+  --tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity, 1));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+.text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity, 1));
+}
+.text-indigo-200 {
+  --tw-text-opacity: 1;
+  color: rgb(199 210 254 / var(--tw-text-opacity, 1));
+}
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity, 1));
+}
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity, 1));
+}
+.text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity, 1));
+}
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+}
+.text-transparent {
+  color: transparent;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
+}
+.text-yellow-700 {
+  --tw-text-opacity: 1;
+  color: rgb(161 98 7 / var(--tw-text-opacity, 1));
+}
+.line-through {
+  text-decoration-line: line-through;
+}
+.opacity-5 {
+  opacity: 0.05;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-purple-500\/50 {
+  --tw-shadow-color: rgb(168 85 247 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-red-500 {
+  --tw-shadow-color: #ef4444;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.blur-3xl {
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.backdrop-blur-xl {
+  --tw-backdrop-blur: blur(24px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.last\:border-0:last-child {
+  border-width: 0px;
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-neutral-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-neutral-700\/50:hover {
+  background-color: rgb(64 64 64 / 0.5);
+}
+
+.hover\:bg-white\/40:hover {
+  background-color: rgb(255 255 255 / 0.4);
+}
+
+.hover\:text-neutral-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(212 212 212 / var(--tw-text-opacity, 1));
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="min-h-screen bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 text-white p-8 font-sans flex flex-col"><div class="mb-8 flex items-center justify-between"><div><h1 class="text-4xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Dashboard</h1><p class="text-neutral-400 text-sm mt-1">Welcome back! Here's your performance overview.</p></div><div class="flex items-center gap-4"><div class="bg-neutral-800 rounded-2xl px-4 py-2 text-sm font-mono">1:54:47 PM</div><button class="p-3 rounded-2xl transition-all  bg-neutral-800 hover:bg-neutral-700" title="Refresh data">🔄</button><button class="p-3 rounded-2xl transition-all bg-neutral-800 hover:bg-neutral-700" title="Export data">📥</button><button class="p-3 rounded-2xl transition-all bg-neutral-800 hover:bg-neutral-700" title="Settings">⚙️</button><button class="p-3 rounded-2xl transition-all bg-neutral-800 hover:bg-neutral-700">☀️</button></div></div><div class="mb-6 space-y-2 max-h-40 overflow-y-auto"><div class="flex items-center justify-between gap-4 rounded-2xl p-4 backdrop-blur-xl border animate-in fade-in slide-in-from-top-2 bg-emerald-500/20 border-emerald-500/50 text-emerald-700"><span class="text-sm">Database backup completed</span><button class="text-xl hover:opacity-70 transition-opacity">✕</button></div><div class="flex items-center justify-between gap-4 rounded-2xl p-4 backdrop-blur-xl border animate-in fade-in slide-in-from-top-2 bg-blue-500/20 border-blue-500/50 text-blue-700"><span class="text-sm">New user registered</span><button class="text-xl hover:opacity-70 transition-opacity">✕</button></div><div class="flex items-center justify-between gap-4 rounded-2xl p-4 backdrop-blur-xl border animate-in fade-in slide-in-from-top-2 bg-yellow-500/20 border-yellow-500/50 text-yellow-700"><span class="text-sm">System update available</span><button class="text-xl hover:opacity-70 transition-opacity">✕</button></div><button class="text-xs text-neutral-400 hover:text-neutral-300 transition-colors">Clear all</button></div><div class="w-full grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-max"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 flex flex-col justify-between hover:scale-105 transition-transform border border-neutral-700/50"><div class="flex items-start justify-between"><div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">JM</div><span class="px-3 py-1 bg-emerald-500/20 border border-emerald-500/50 rounded-full text-xs font-medium text-emerald-300">Active</span></div><div><h3 class="text-xl font-bold">Welcome back, Jofether</h3><p class="text-neutral-400 text-sm mt-1">Pro Member • Tier 5</p><div class="mt-4 flex gap-2"><div class="flex-1 h-1.5 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full"></div></div></div></div><div class="bg-gradient-to-br from-indigo-600 via-indigo-600 to-purple-600 rounded-3xl p-8 md:col-span-5 flex flex-col justify-between relative overflow-hidden hover:shadow-2xl transition-shadow"><div class="absolute top-0 right-0 w-72 h-72 bg-white opacity-5 rounded-full -mr-20 -mt-20 blur-3xl"></div><div class="relative z-10"><div class="flex items-end justify-between mb-6"><div><p class="text-indigo-200 font-medium text-sm mb-2">Total Revenue</p><h2 class="text-5xl font-bold">$124.6K</h2></div><div class="px-3 py-2 rounded-lg bg-emerald-500/20 text-emerald-300 text-sm font-semibold">↑ 12.5%</div></div></div><div class="h-20 flex items-end space-x-1.5 relative z-10"><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 40%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 70%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 50%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 90%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 60%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 80%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 50%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 70%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 60%;"></div><div class="flex-1 bg-white/20 hover:bg-white/40 rounded-t transition-colors" style="height: 95%;"></div></div></div><div class="bg-gradient-to-br from-neutral-800/50 to-neutral-700/50 backdrop-blur-xl rounded-3xl p-8 flex flex-col items-center justify-center text-center border border-neutral-700/50 relative overflow-hidden"><div class="absolute inset-0 opacity-5 bg-gradient-to-br from-green-500 via-transparent to-transparent rounded-3xl"></div><div class="relative z-10 w-full"><div class="w-32 h-32 mx-auto rounded-full border-8 border-green-500/30 border-t-green-500 animate-spin mb-4"></div><h3 class="text-3xl font-bold">842</h3><p class="text-neutral-400 mt-2 text-sm">Live Visitors</p><div class="mt-3 flex gap-2 justify-center"><span class="text-xs px-2 py-1 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">+8.3%</span></div></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center">📈</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300">↑ 5.2%</div></div><p class="text-neutral-400 text-sm mb-1">Conversion Rate</p><h3 class="text-2xl font-bold">3.8%</h3></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center">⚙️</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-red-500/20 text-red-300">↓ 8.5%</div></div><p class="text-neutral-400 text-sm mb-1">CPU Usage</p><h3 class="text-2xl font-bold">62%</h3></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">💾</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300">↑ 3.1%</div></div><p class="text-neutral-400 text-sm mb-1">Memory Usage</p><h3 class="text-2xl font-bold">4.2 GB</h3></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center">✅</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300">↑ 0%</div></div><p class="text-neutral-400 text-sm mb-1">System Uptime</p><h3 class="text-2xl font-bold">99.9%</h3></div></div><div class="bg-gradient-to-br from-neutral-800/50 to-neutral-700/50 backdrop-blur-xl rounded-3xl p-6 md:col-span-2 flex flex-col justify-between border border-neutral-700/50 relative overflow-hidden hover:scale-105 transition-transform"><div class="absolute inset-0 opacity-5 bg-gradient-to-br from-red-500 via-transparent to-transparent rounded-3xl"></div><div class="relative z-10 flex items-center justify-between"><div><div class="flex items-center space-x-3 mb-3"><span class="w-3 h-3 bg-red-500 rounded-full animate-pulse shadow-lg shadow-red-500"></span><span class="font-bold text-red-400 uppercase text-xs tracking-wide">System Alert</span></div><p class="font-semibold text-base leading-tight">Server load at 94% capacity.</p><p class="text-xs mt-2 text-neutral-500">Monitor closely</p></div><button class="text-2xl hover:opacity-70 transition-opacity flex-shrink-0">✕</button></div></div><div class="md:col-span-2"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50"><h3 class="font-semibold text-lg mb-4">Recent Activity</h3><div class="space-y-3"><div class="flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0"><div class="text-2xl">🚀</div><div class="flex-1 min-w-0"><p class="font-medium text-sm">Sarah Chen</p><p class="text-neutral-400 text-xs">deployed</p></div><span class="text-neutral-400 text-xs whitespace-nowrap">5m ago</span></div><div class="flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0"><div class="text-2xl">🐛</div><div class="flex-1 min-w-0"><p class="font-medium text-sm">Alex Kumar</p><p class="text-neutral-400 text-xs">fixed bug</p></div><span class="text-neutral-400 text-xs whitespace-nowrap">15m ago</span></div><div class="flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0"><div class="text-2xl">✅</div><div class="flex-1 min-w-0"><p class="font-medium text-sm">Emma Davis</p><p class="text-neutral-400 text-xs">merged PR</p></div><span class="text-neutral-400 text-xs whitespace-nowrap">1h ago</span></div><div class="flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0"><div class="text-2xl">👁️</div><div class="flex-1 min-w-0"><p class="font-medium text-sm">Jake Wilson</p><p class="text-neutral-400 text-xs">reviewed code</p></div><span class="text-neutral-400 text-xs whitespace-nowrap">2h ago</span></div></div></div></div><div class="md:col-span-2"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50"><h3 class="font-semibold text-lg mb-4">February 2026</h3><div class="grid grid-cols-7 gap-2 text-center text-xs"><div class="font-semibold text-neutral-400 py-2">Sun</div><div class="font-semibold text-neutral-400 py-2">Mon</div><div class="font-semibold text-neutral-400 py-2">Tue</div><div class="font-semibold text-neutral-400 py-2">Wed</div><div class="font-semibold text-neutral-400 py-2">Thu</div><div class="font-semibold text-neutral-400 py-2">Fri</div><div class="font-semibold text-neutral-400 py-2">Sat</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">1</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">2</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">3</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">4</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">5</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">6</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">7</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">8</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">9</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">10</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">11</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">12</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">13</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">14</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">15</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">16</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">17</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">18</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">19</div><div class="py-2 rounded-lg text-sm bg-gradient-to-br from-purple-500 to-pink-500 font-bold">20</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">21</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">22</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">23</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">24</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">25</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">26</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">27</div><div class="py-2 rounded-lg text-sm hover:bg-neutral-700/50">28</div></div></div></div><div class="md:col-span-2"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50"><h3 class="font-semibold text-lg mb-4">Team Members</h3><div class="space-y-3"><div class="flex items-center gap-3"><div class="text-2xl relative">👨‍💼<div class="w-2.5 h-2.5 rounded-full absolute bottom-0 right-0 bg-emerald-500"></div></div><div class="flex-1"><p class="text-sm font-medium">Alex Johnson</p><p class="text-xs text-neutral-400">Frontend</p></div><span class="text-xs px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-300">online</span></div><div class="flex items-center gap-3"><div class="text-2xl relative">👩‍💼<div class="w-2.5 h-2.5 rounded-full absolute bottom-0 right-0 bg-emerald-500"></div></div><div class="flex-1"><p class="text-sm font-medium">Maria Garcia</p><p class="text-xs text-neutral-400">Backend</p></div><span class="text-xs px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-300">online</span></div><div class="flex items-center gap-3"><div class="text-2xl relative">🧑‍💻<div class="w-2.5 h-2.5 rounded-full absolute bottom-0 right-0 bg-yellow-500"></div></div><div class="flex-1"><p class="text-sm font-medium">Chen Wei</p><p class="text-xs text-neutral-400">DevOps</p></div><span class="text-xs px-2 py-1 rounded-full bg-yellow-500/20 text-yellow-300">away</span></div><div class="flex items-center gap-3"><div class="text-2xl relative">👩‍🎨<div class="w-2.5 h-2.5 rounded-full absolute bottom-0 right-0 bg-emerald-500"></div></div><div class="flex-1"><p class="text-sm font-medium">Sophie Martin</p><p class="text-xs text-neutral-400">Design</p></div><span class="text-xs px-2 py-1 rounded-full bg-emerald-500/20 text-emerald-300">online</span></div></div></div></div><div class="md:col-span-2"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50"><h3 class="font-semibold text-lg mb-4">Storage Usage</h3><div class="mb-4"><div class="flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30"><div class="bg-blue-500" title="Documents: 35%" style="width: 35%;"></div><div class="bg-purple-500" title="Media: 40%" style="width: 40%;"></div><div class="bg-emerald-500" title="Code: 15%" style="width: 15%;"></div><div class="bg-orange-500" title="Other: 10%" style="width: 10%;"></div></div></div><div class="space-y-2"><div class="flex items-center justify-between text-sm"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-blue-500"></div><span>Documents</span></div><span class="text-neutral-400">35%</span></div><div class="flex items-center justify-between text-sm"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-purple-500"></div><span>Media</span></div><span class="text-neutral-400">40%</span></div><div class="flex items-center justify-between text-sm"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-emerald-500"></div><span>Code</span></div><span class="text-neutral-400">15%</span></div><div class="flex items-center justify-between text-sm"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-orange-500"></div><span>Other</span></div><span class="text-neutral-400">10%</span></div></div><p class="text-xs mt-4 text-neutral-500">Using 850 GB of 1 TB</p></div></div><div class="md:col-span-2"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50"><div class="mb-4"><h3 class="font-semibold text-lg mb-2">Tasks</h3><div class="h-2 bg-neutral-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all" style="width: 25%;"></div></div><p class="text-xs mt-1 text-neutral-400">1/4 completed</p></div><div class="space-y-2"><label class="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg"><input type="checkbox" class="w-4 h-4 rounded" checked="" style=""><span class="flex-1 text-sm text-neutral-500 line-through">Update dashboard components</span><span class="text-xs px-2 py-1 rounded bg-red-500/20 text-red-300">high</span></label><label class="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg"><input type="checkbox" class="w-4 h-4 rounded" style=""><span class="flex-1 text-sm ">Review pull requests</span><span class="text-xs px-2 py-1 rounded bg-red-500/20 text-red-300">high</span></label><label class="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg"><input type="checkbox" class="w-4 h-4 rounded" style=""><span class="flex-1 text-sm ">Write unit tests</span><span class="text-xs px-2 py-1 rounded bg-yellow-500/20 text-yellow-300">medium</span></label><label class="flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg"><input type="checkbox" class="w-4 h-4 rounded" style=""><span class="flex-1 text-sm ">Deploy to production</span><span class="text-xs px-2 py-1 rounded bg-red-500/20 text-red-300">high</span></label></div></div></div><div class="md:col-span-3"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50"><h3 class="font-semibold text-lg mb-4">Performance Metrics</h3><div class="h-40 flex items-end space-x-2"><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="97%" style="height: 97%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="69%" style="height: 69%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="28%" style="height: 28%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="81%" style="height: 81%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="25%" style="height: 25%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="72%" style="height: 72%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="72%" style="height: 72%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="23%" style="height: 23%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="15%" style="height: 15%;"></div><div class="flex-1 bg-gradient-to-t from-purple-500 to-pink-500 rounded-t hover:opacity-80 transition-opacity" title="60%" style="height: 60%;"></div></div></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center">⚡</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-red-500/20 text-red-300">↓ 3.1%</div></div><p class="text-neutral-400 text-sm mb-1">Avg Response Time</p><h3 class="text-2xl font-bold">245ms</h3></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center">🛡️</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-red-500/20 text-red-300">↓ 2.4%</div></div><p class="text-neutral-400 text-sm mb-1">Error Rate</p><h3 class="text-2xl font-bold">0.12%</h3></div></div><div class="cursor-pointer"><div class="bg-neutral-800/50 backdrop-blur-xl rounded-3xl p-6 border border-neutral-700/50 hover:scale-105 transition-transform"><div class="flex items-start justify-between mb-4"><div class="text-3xl w-12 h-12 bg-gradient-to-br from-purple-500 to-violet-500 rounded-2xl flex items-center justify-center">📊</div><div class="px-2 py-1 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300">↑ 12.8%</div></div><p class="text-neutral-400 text-sm mb-1">Throughput</p><h3 class="text-2xl font-bold">2.4K/s</h3></div></div><div class="bg-gradient-to-br from-neutral-800/50 to-neutral-700/50 backdrop-blur-xl rounded-3xl p-6 md:col-span-3 flex items-center justify-between border border-neutral-700/50 cursor-pointer hover:scale-105 transition-transform"><div><span class="font-semibold">Dark Mode</span><p class="text-xs text-neutral-400">Enabled</p></div><button class="w-14 h-8 rounded-full p-1 flex transition-all bg-green-500/30 justify-end"><div class="w-6 h-6 bg-green-400 rounded-full shadow-lg transition-all"></div></button></div><div class="bg-gradient-to-r from-neutral-800/50 via-neutral-750/50 to-neutral-700/50 backdrop-blur-xl rounded-3xl p-6 md:col-span-6 flex items-center justify-between border border-neutral-700/50"><div class="flex-1"><div class="flex items-center justify-between mb-2"><span class="text-sm font-semibold">Performance Goal</span><span class="text-xs font-mono text-neutral-400">75%</span></div><div class="h-2.5 bg-neutral-700 rounded-full overflow-hidden border border-neutral-600/50"><div class="w-3/4 h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/50"></div></div></div></div></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+
+</body></html>
