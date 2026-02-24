@@ -2,6 +2,7 @@
   "repository": "Bento Grid Dashboard",
   "bugs": [
     {
+      "comment": "Bug #1 - margin",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/App.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "<div className=\"mb-[-50px] flex items-center justify-between\">",
       "css_selector": ".header-container",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+      "x": 32,
+      "y": 32,
+      "width": 1216,
+      "height": 80
       }
     },
     {
+      "comment": "Bug #2 - grid-layout",
       "bug_category": "Layout",
       "bug_type": "grid-layout",
       "file_modified": "src/App.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "<div className=\"w-full grid grid-cols-1 gap-4 auto-rows-max\">",
       "css_selector": ".bento-grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 230,
+        "width": 1216,
+        "height": 490
       }
     },
     {
+      "comment": "Bug #3 - destructuring",
       "bug_category": "Typo",
       "bug_type": "destructuring",
       "file_modified": "src/components/ActivityFeed.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "const [activities] = useState([",
       "css_selector": ".activity-feed",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 584,
+        "width": 904,
+        "height": 202
       }
     },
     {
+      "comment": "Bug #4 - gap",
       "bug_category": "Spacing",
       "bug_type": "gap",
       "file_modified": "src/components/ActivityFeed.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "<div key={activity.id} className=\"flex items-center gap-0 pb-3 border-b border-neutral-700/30 last:border-0\">",
       "css_selector": ".activity-item",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+      "x": 32,
+      "y": 46,
+      "width": 1216,
+      "height": 160
       }
     },
     {
+      "comment": "Bug #5 - background-gradient",
       "bug_category": "Color",
       "bug_type": "background-gradient",
       "file_modified": "src/components/Calendar.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "? 'bg-neutral-800 font-bold'",
       "css_selector": ".calendar-day-current",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+      "x": 1110,
+      "y": 780,
+      "width": 32,
+      "height": 32
       }
     },
     {
+      "comment": "Bug #6 - flexbox",
       "bug_category": "Layout",
       "bug_type": "flexbox",
       "file_modified": "src/components/Chart.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "<div className=\"h-40 flex flex-col space-x-2\">",
       "css_selector": ".chart-bars",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 952,
+        "y": 1191,
+        "width": 296,
+        "height": 254
       }
     },
     {
+      "comment": "Bug #7 - text-size",
       "bug_category": "Typo",
       "bug_type": "text-size",
       "file_modified": "src/components/StatCard.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "<div className={`text-33xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
       "css_selector": ".stat-card-icon",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 28,
+        "width": 182,
+        "height": 48
       }
     },
     {
+      "comment": "Bug #8 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/components/StorageWidget.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0\">",
       "css_selector": ".storage-bar-container",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 952,
+        "y": 901,
+        "width": 274,
+        "height": 134
       }
     },
     {
+      "comment": "Bug #9 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/components/StorageWidget.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "className={`${item.color} relative z-[-1]`}",
       "css_selector": ".storage-bar-segment",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 976,
+        "y": 961,
+        "width": 226,
+        "height": 24
       }
     },
     {
+      "comment": "Bug #10 - flexbox-class",
       "bug_category": "Typo",
       "bug_type": "flexbox-class",
       "file_modified": "src/components/TaskList.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "<label key={task.id} className=\"flexx items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
       "css_selector": ".task-item",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 1191,
+        "width": 904,
+        "height": 74
       }
     }
   ]
