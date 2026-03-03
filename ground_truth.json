@@ -9,12 +9,12 @@
       "line_number": 96,
       "clean_code": "<div className=\"mb-8 flex items-center justify-between\">",
       "buggy_code": "<div className=\"mb-[-50px] flex items-center justify-between\">",
-      "css_selector": ".header-container",
+      "css_selector": ".flex.items-center.justify-between",
       "bounding_box": {
       "x": 32,
       "y": 32,
       "width": 1216,
-      "height": 80
+      "height": 200
       }
     },
     {
@@ -25,7 +25,7 @@
       "line_number": 197,
       "clean_code": "<div className=\"w-full grid grid-cols-1 md:grid-cols-6 gap-4 auto-rows-max\">",
       "buggy_code": "<div className=\"w-full grid grid-cols-1 gap-4 auto-rows-max\">",
-      "css_selector": ".bento-grid",
+      "css_selector": ".grid.gap-4.auto-rows-max",
       "bounding_box": {
         "x": 32,
         "y": 230,
@@ -41,7 +41,7 @@
       "line_number": 4,
       "clean_code": "const [activities, setActivities] = useState([",
       "buggy_code": "const [activities] = useState([",
-      "css_selector": ".activity-feed",
+      "css_selector": ".backdrop-blur-xl.rounded-3xl.p-6.border",
       "bounding_box": {
         "x": 32,
         "y": 584,
@@ -57,12 +57,12 @@
       "line_number": 14,
       "clean_code": "<div key={activity.id} className=\"flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0\">",
       "buggy_code": "<div key={activity.id} className=\"flex items-center gap-0 pb-3 border-b border-neutral-700/30 last:border-0\">",
-      "css_selector": ".activity-item",
+      "css_selector": "div:has(> h3:has-text(\"Activity\")) div.flex.items-center.pb-3.border-b",
       "bounding_box": {
       "x": 32,
-      "y": 46,
-      "width": 1216,
-      "height": 160
+      "y": 640,
+      "width": 900,
+      "height": 140
       }
     },
     {
@@ -73,12 +73,12 @@
       "line_number": 39,
       "clean_code": "? 'bg-gradient-to-br from-purple-500 to-pink-500 font-bold'",
       "buggy_code": "? 'bg-neutral-800 font-bold'",
-      "css_selector": ".calendar-day-current",
+      "css_selector": "div:has(> .grid.grid-cols-7) div.font-bold",
       "bounding_box": {
-      "x": 1110,
-      "y": 780,
-      "width": 32,
-      "height": 32
+      "x": 1080,
+      "y": 750,
+      "width": 100,
+      "height": 100
       }
     },
     {
@@ -89,7 +89,7 @@
       "line_number": 9,
       "clean_code": "<div className=\"h-40 flex items-end space-x-2\">",
       "buggy_code": "<div className=\"h-40 flex flex-col space-x-2\">",
-      "css_selector": ".chart-bars",
+      "css_selector": "div.h-40.flex.space-x-2",
       "bounding_box": {
         "x": 952,
         "y": 1191,
@@ -105,12 +105,12 @@
       "line_number": 9,
       "clean_code": "<div className={`text-3xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
       "buggy_code": "<div className={`text-33xl w-12 h-12 bg-gradient-to-br ${gradient} rounded-2xl flex items-center justify-center`}>",
-      "css_selector": ".stat-card-icon",
+      "css_selector": "div.w-12.h-12.rounded-2xl.flex.items-center",
       "bounding_box": {
         "x": 32,
         "y": 28,
         "width": 182,
-        "height": 48
+        "height": 120
       }
     },
     {
@@ -121,7 +121,7 @@
       "line_number": 14,
       "clean_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30\">",
       "buggy_code": "<div className=\"flex h-6 gap-1 rounded-full overflow-hidden bg-neutral-700/30 relative z-0\">",
-      "css_selector": ".storage-bar-container",
+      "css_selector": "div.flex.h-6.gap-1.rounded-full.overflow-hidden",
       "bounding_box": {
         "x": 952,
         "y": 901,
@@ -137,12 +137,12 @@
       "line_number": 18,
       "clean_code": "className={item.color}",
       "buggy_code": "className={`${item.color} relative z-[-1]`}",
-      "css_selector": ".storage-bar-segment",
+      "css_selector": "div.flex.h-6.gap-1.rounded-full.overflow-hidden",
       "bounding_box": {
-        "x": 976,
-        "y": 961,
-        "width": 226,
-        "height": 24
+        "x": 952,
+        "y": 901,
+        "width": 274,
+        "height": 134
       }
     },
     {
@@ -153,7 +153,7 @@
       "line_number": 24,
       "clean_code": "<label key={task.id} className=\"flex items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
       "buggy_code": "<label key={task.id} className=\"flexx items-center gap-3 cursor-pointer hover:opacity-75 transition-opacity p-2 rounded-lg\">",
-      "css_selector": ".task-item",
+      "css_selector": "label.items-center.gap-3.cursor-pointer.p-2.rounded-lg",
       "bounding_box": {
         "x": 32,
         "y": 1191,
