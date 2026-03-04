@@ -57,7 +57,7 @@
       "line_number": 14,
       "clean_code": "<div key={activity.id} className=\"flex items-center gap-3 pb-3 border-b border-neutral-700/30 last:border-0\">",
       "buggy_code": "<div key={activity.id} className=\"flex items-center gap-0 pb-3 border-b border-neutral-700/30 last:border-0\">",
-      "css_selector": "div:has(> h3:has-text(\"Activity\")) div.flex.items-center.pb-3.border-b",
+      "css_selector": "div:has(> h3) div.flex.items-center.pb-3.border-b",
       "bounding_box": {
       "x": 32,
       "y": 640,
@@ -73,7 +73,7 @@
       "line_number": 39,
       "clean_code": "? 'bg-gradient-to-br from-purple-500 to-pink-500 font-bold'",
       "buggy_code": "? 'bg-neutral-800 font-bold'",
-      "css_selector": "div:has(> .grid.grid-cols-7) div.font-bold",
+      "css_selector": "div:has(> .grid.grid-cols-7) div.py-2.rounded-lg.text-sm.font-bold",
       "bounding_box": {
       "x": 1080,
       "y": 750,
